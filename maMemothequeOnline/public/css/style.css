@@ -1,0 +1,12 @@
+img{
+    max-width: 70%;
+    max-height: 70%;
+}
+
+#homebutton{
+    text-decoration: none;
+}
+
+#homebutton:hover{
+    color: rgb(255, 0, 174);
+}

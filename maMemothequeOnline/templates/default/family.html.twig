@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DefaultController!{% endblock %}
+
+
+{% block body %}
+  <main>
+    <a id="homebutton" href="HomePage.html">
+      <h1>Ma Mémothèque</h1>
+    </a>
+    <h1>Famille</h1>
+    <button>Ajouter un membre</button>
+
+    <section>
+      <input type="text" placeholder="Rechercher un membre...">
+      <div>
+        <button>Grille</button>
+        <button>Chronologie</button>
+      </div>
+    </section>
+
+    <nav>
+      <button>Vue Grille</button>
+      <button>Vue Chronologique</button>
+    </nav>
+
+    <section>
+      <article>
+        <img src="https://ltqluifnvhpztvppigxo.supabase.co/storage/v1/object/public/family_media/photos/1738418057342-pikgys" alt="Jérémie Martin">
+        <h2>Jérémie Martin</h2>
+      </article>
+      <article>
+        <img src="https://ltqluifnvhpztvppigxo.supabase.co/storage/v1/object/public/family_media/photos/1738600028973-d7pl1o" alt="Frantz Cadon">
+        <h2>Frantz Cadon</h2>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Ma mémothèque. Tous droits réservés.</p>
+
+    <a href="#demo">Signaler un problème</a>
+    <div id="demo" class="modal">
+      <div class="modal_content">
+        <h1>Signaler un problème</h1>
+        <p>Titre</p>
+        <textarea rows="5" placeholder="Décrivez brièvement le problème"></textarea>
+        <p>Description</p>
+        <textarea rows="5" placeholder="Donnez nous plus de détails sur le problème rencontré."></textarea>
+        <a href="#" class="modal_close">&times;</a>
+      </div>
+    </div>
+
+  </footer>
+{% endblock %}

@@ -13,4 +13,10 @@ final class DefaultController extends AbstractController
     {
         return $this->render('default/index.html.twig');
     }
+
+    #[Route('/family', name: 'app_family')]
+    public function family(): Response
+    {
+        return $this->render('default/family.html.twig');
+    }
 }

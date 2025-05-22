@@ -3,19 +3,66 @@
 {% block title %}Hello DefaultController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+  <!-- Header -->
+  <header>
+    <div>
+      <div>
+        <!-- Icône BookOpen ici en SVG ou image -->
+        <a id="homebutton" href="HomePage.html">
+          <h1>Ma Mémothèque</h1>
+        </a>
+      </div>
+      <div>
+        <a href="{{ path('app_family') }}">
+          <button>
+            Me connecter à ma mémothèque
+          </button>
+        </a>
+      </div>
+    </div>
+  </header>
 
-<div class="example-wrapper">
-    <h1>Hello ! ✅</h1>
+  <!-- Contenu principal -->
+  <main>
+    <div>
+      <h1>
+        Préservez vos souvenirs<br />
+        familiaux pour les<br />
+        générations futures
+      </h1>
+      <p>
+        Collectez, organisez et partagez vos histoires familiales, photos et
+        documents dans un espace numérique sécurisé
+      </p>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>/home/gwenn/memotheque/maMemothequeOnline/src/Controller/DefaultController.php</code></li>
-        <li>Your template at <code>/home/gwenn/memotheque/maMemothequeOnline/templates/default/index.html.twig</code></li>
-    </ul>
-    <p> Coucou Peprignan </p>
-</div>
+      <!-- Caractéristiques -->
+      <div>
+        <!-- Bloc 1 -->
+        <div>
+          <!-- Icône SVG ici -->
+          <h3>Collection simple</h3>
+          <p>Importez facilement photos, documents et récits familiaux</p>
+        </div>
+        <!-- Bloc 2 et 3 similaires -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Ma mémothèque. Tous droits réservés.</p>
+
+    <a href="#demo">Signaler un problème</a>
+    <div id="demo" class="modal">
+      <div class="modal_content">
+        <h1>Signaler un problème</h1>
+        <p>Titre</p>
+        <textarea rows="5" placeholder="Décrivez brièvement le problème"></textarea>
+        <p>Description</p>
+        <textarea rows="5" placeholder="Donnez nous plus de détails sur le problème rencontré."></textarea>
+        <a href="#" class="modal_close">&times;</a>
+      </div>
+    </div>
+
+  </footer>
 {% endblock %}
